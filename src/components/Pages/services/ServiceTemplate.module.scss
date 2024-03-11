@@ -1,0 +1,233 @@
+.servicePage {
+    width: 100%;
+    padding-left: 5%;
+}
+
+.servicePage * {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.serviceWrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+}
+
+.serviceDesc {
+    grid-column: 1/3;
+    padding-right: 75px;
+}
+
+.servicePage .serviceTitle {
+    font-size: 64px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(71, 35, 214);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.servicePage .description {
+    font-size: 36px;
+    text-align: justify;
+    line-height: 60px;
+}
+
+.servicePage section {
+    font-size: 36px;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+.servicePage h2 {
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.servicePage h3 {
+    font-size: 36px;
+    margin: 25px auto;
+    text-align: justify;
+}
+
+.servicePage .emphasize {
+    background-color: rgb(71, 35, 214);
+    border-radius: 5px;
+    width: fit-content;
+
+}
+
+ .servicePage .liRighter {
+    padding-left: 0px;
+    line-height: 32px;
+}
+
+.servicePage .liDesc {
+    padding-left: 2rem;
+    line-height: 32px;
+}
+
+.servicePage .bigLi {
+    font-size: 44px;
+}
+
+
+.servicePage li {
+    font-size: 32px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.servicePage .clickable_li:hover {
+    cursor: pointer;
+}
+
+.servicePage .hidden_li {
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    transition: height 1 ease;
+    pointer-events: none;
+    
+}
+
+.servicePage .hidden_li ul{
+    margin-top: 0;
+    margin-bottom: 40px;    
+}
+
+
+.servicePage .hidden_li p {
+    margin: 0 auto;
+    line-height: 32px;
+
+}
+
+.servicePage .hidden_li p span{
+    font-weight: 600;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.servicePage .dropDownSubLi li {
+    font-size: 24px;
+    padding-left: 1%;
+}
+
+
+.servicePage article {
+    margin-bottom: 50px;
+}
+
+.servicePage .listSecondary {
+    padding-left: 5%;
+}
+
+.servicePage table {
+    border: 1px solid ;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.servicePage td {
+    border: 1px solid ;
+    padding: 10px;
+    font-size: 20px;
+    text-align: start;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 1085px) {
+
+    .servicePage {
+        width: 90%;
+    }
+
+    .serviceDesc {
+        width: 100%;
+        grid-column: 1/4;
+        padding-right: 0;
+    }
+
+    .servicePage .description {
+        font-size: 24px;
+        text-align: justify;
+        line-height: 30px;
+    }
+
+    .servicePage .serviceTitle {
+        font-size: 40px;
+        line-height: 48px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .servicePage .emphasize {
+        background-color: rgb(71, 35, 214);
+        border-radius: 5px;
+        width: fit-content;
+        font-size: 28px;
+    }
+
+    .servicePage section {
+        font-size: 20px;
+        text-align: justify;
+        line-height: 32px;
+        margin-bottom: 40px;
+    }
+
+    .servicePage h2 {
+        font-size: 28px;
+        text-align: left;
+    }
+
+    .servicePage h3 {
+        font-size: 24px;
+    }
+
+    .servicePage p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .servicePage ul {
+        position:initial;
+        background-color: transparent;
+        height: fit-content;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    .servicePage li {
+        text-align: left;
+        font-size: 20px;
+        line-height: 2rem;
+    } 
+
+    .servicePage li .liP {
+        font-size: 18px;
+        line-height: 2rem;
+        text-align: justify;
+
+    }
+
+    .servicePage .dropDownSubLi li {
+        font-size: 20px;
+        padding-left: 2%;
+    }
+    
+
+}

@@ -1,0 +1,283 @@
+.productsPage {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.productsPage * {
+    font-weight: 500;
+}
+
+.product {
+    width: 100%;
+    padding-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+}
+
+.productDesc {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 75px;
+    grid-column: 1/3;
+}
+
+.product .slogan {
+    font-size: 48px;
+}
+
+.product .productTitle {
+    font-size: 64px;
+    margin-bottom: 32px;
+    background-color: rgb(71, 35, 214);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.product .brief {
+    margin: 50px 0;
+    font-size: 36px;
+}
+
+.productsPage h2 {
+    font-size: 48px;
+    margin: 25px auto;
+}
+
+
+.productsPage h3 {
+    font-size: 36px;
+    margin: 25px auto;
+}
+
+.productsPage p {
+    font-size: 36px;
+    line-height: 60px;
+    text-align: justify;
+}
+
+
+.productsPage .subUl {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.productsPage li {
+    font-size: 32px;
+    text-align: justify;
+    line-height: 44px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* hyphens: manual; */
+}
+
+.productsPage .subLi {
+    padding-left: 25px;
+}
+
+.productsPage td {
+    border: 1px solid ;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.productsPage table {
+    border: 1px solid ;
+    border-collapse: collapse;
+    margin: 15px 0;
+    width: fit-content;
+}
+
+.productsPage svg {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+/* @media screen and (max-width: 1024px) {
+    .productsPage .productTitle {
+        margin-top: 50px;
+    }
+    
+    .productsPage .h1main {
+        font-size: 28px;
+    }
+
+    .productsPage ul {
+        position:static;
+        background-color: transparent;
+        height: fit-content;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .productsPage .subUl {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .productsPage li {
+        font-size: 24px;
+    }
+
+    
+    .productsPage .productDesc {
+        width: 100%;
+    }
+
+    .productsPage h1 {
+        font-size: 28px;
+    }
+
+    .productsPage h2 {
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .productsPage h3 {
+        font-size: 24px;
+    }
+
+    .productsPage h4 {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .productsPage span {
+        font-size: 18px;
+        text-align: justify;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    
+
+    .productsPage td {
+        font-size: 16px;
+        padding: 5px;
+    }
+} */
+
+
+@media screen and (max-width: 1085px) {
+
+    .product {
+        display: block;
+    }
+
+    .productDesc {
+        width: 100%;
+    }
+
+    .productsPage ul {
+        position: initial;
+        background-color: transparent;
+        height: fit-content;
+    }
+
+    .productsPage .productTitle {
+        font-size: 48px;
+    }
+
+    .productsPage h2 {
+        font-size: 36px;
+    }
+
+    .productsPage h3 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .productsPage .slogan {
+        font-size: 32px;
+        line-height: 48px;
+        text-align:left;
+    }
+
+    .productsPage .brief {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: justify;
+    }
+
+    .productsPage p {
+        text-align: justify;
+        font-size: 24px;
+        line-height: 2rem;
+    }
+
+    .productsPage li {
+        font-size: 22px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .product {
+        display: block;
+    }
+
+    .productsPage {
+        width: 99vw;
+        margin: auto;
+        padding-top: 0;
+    }
+
+    .product {
+        margin: auto;
+        width: 90%;
+        padding-left: 0;
+    }
+
+    .productDesc {
+        width: 90%;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .productsPage .productTitle {
+        font-size: 48px;
+    }
+
+    .productsPage h2 {
+        font-size: 36px;
+    }
+
+    .productsPage h3 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .productsPage .slogan {
+        font-size: 32px;
+        line-height: 48px;
+        text-align:left;
+    }
+
+    .productsPage .brief {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: justify;
+    }
+
+    .productsPage p {
+        text-align: justify;
+        font-size: 24px;
+        line-height: 2rem;
+       }
+
+    .productsPage li {
+        font-size: 22px;
+        line-height: 2rem;
+    }
+}

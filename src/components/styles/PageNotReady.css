@@ -1,0 +1,34 @@
+.notReady-page {
+    font-family: "Montserrat",sans-serif;
+    height:100vh;
+    width: 100vw;
+}
+
+.notReady-page-content {
+    margin-top: 80px;
+    font-size: 64px;
+    width: 85%;
+    margin: auto;
+    height: fit-content;
+}
+
+.notReady-page-content p{
+    font-size: 64px;
+    margin: 60px auto;
+}
+
+.notReady-page-content a {
+    font-size: 36px;
+    text-decoration: underline;
+    display: block;
+}
+
+@media screen and (max-width:800px) {
+    .notReady-page-content p {
+        font-size: 32px;
+    }
+
+    .notReady-page-content a {
+        font-size: 28px;
+    }
+}

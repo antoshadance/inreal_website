@@ -1,0 +1,60 @@
+.aboutPage {
+    min-height: 80vh;
+    max-height: 100%;
+    width: 100vw;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutPage-content {
+    width: 50%;
+    margin: 7.5vh auto;
+}
+
+.aboutPage-content h1 {
+    font-size: 64px;
+    margin: 50px auto;
+}
+
+.aboutPage-content p {
+    font-size: 48px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .aboutPage-content {
+        width: 85%;
+        margin: 2.5vh auto;
+    }
+
+    .aboutPage-content h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 36px;
+        margin: 50px auto;
+    }
+
+    .aboutPage-content p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .aboutPage-content {
+        width: 85%;
+        margin: 2.5vh auto;
+    }
+
+    .aboutPage-content h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 36px;
+        margin: 50px auto;
+    }
+
+    .aboutPage-content p {
+        font-size: 24px;
+    }
+}

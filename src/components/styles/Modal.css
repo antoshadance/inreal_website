@@ -1,0 +1,106 @@
+.modal {
+    position: sticky;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: rgb(0, 0, 0);
+    margin: 15vh auto;
+    padding: 20px;
+    border: 0 solid #ffffff;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.modal label {
+    font-family: "Montseratt", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.modal-input {
+    font-family: 'Montseratt', sans-serif;
+    font-size: 16px;
+    margin: 15px auto;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    line-height: 24px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    resize: none;
+}
+
+.modal-input:focus {
+    outline: none;
+    border: 1px solid white;
+    border-radius: 2.5px;
+    transition: all .5s;
+}
+
+.modal-input::placeholder {
+    color: rgba(255, 255, 255, 0.493);
+    font-family: "Montserrat", sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .form_valid_requirement  {
+    line-height: 25px;
+    width: 50%;
+    margin: 0 auto 15px;
+    text-align: center;
+}
+
+.modal-button {
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    height: 50px;
+    width: 50%;
+    font-size: 16px;
+    cursor:pointer;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.disabled_modal_button {
+    border: none;
+    background-color: rgba(128, 128, 128, 0.651);
+    pointer-events: none;
+    text-decoration: line-through;
+    transition: all .5s;
+}
+
+.invalid_input {
+    border-bottom: 1px solid rgba(255, 0, 0, 0.5);
+    transition: all .5s;
+}
+
+.modal-button:hover {
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    color:black;
+    border: 2px solid white;
+    transition: all .5s;
+}
+
+@media screen and (max-width: 1024px) {
+    .modal-content {
+        width: 75%;
+    }
+
+    form .form_valid_requirement  {
+        width: 100%;
+    }
+}

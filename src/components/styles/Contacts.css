@@ -1,0 +1,121 @@
+.contactsPageMain {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contactsPage {
+    width: 75%;
+    margin: auto;
+    padding: 1%;
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contactsPage a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4.8px;
+}
+
+.contactsPage a:hover {
+    border-bottom: 1px solid white;
+    transition-duration: 0.5s;
+}
+
+.contactsPage p {
+    color:rgb(239, 238, 254);
+    font-size: 1.4vh;
+    line-height: 1.5vh;
+}
+
+.aContact h4 {
+    font-size: 32px;
+    line-height: 48px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.aContact {
+    flex: 1 0 25%;
+    flex-wrap: wrap;
+    margin: 25px auto;
+}
+
+.aContact:last-child{
+    text-align: center;
+    margin: auto auto;
+}
+
+
+.aContact:last-of-type h4 {
+    text-align: center;
+}
+
+.aContact:last-of-type p {
+    text-align: center;
+    margin: auto;
+}
+
+.aContact h4 {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.aContact p {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 235, 255, 0.6);
+}
+
+@media screen and (max-width: 800px) {
+    .contactsPage {
+        width: 75%;
+        line-height: 100%;
+        font-size: 1.5vh;
+    }
+    .aContact {
+        flex: 1 -1 33%;
+        flex-wrap: wrap;
+        margin: 10px 5px;
+    }
+
+    .aContact h4 {
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+
+    .aContact p {
+        line-height: 1.5rem;
+        font-size: 14px;
+    }
+}
+
+    @media screen and (min-width:800px) and (max-width: 1024px) {
+        .contactsPage {
+            width: 85%;
+        }
+        .aContact {
+            flex: 1 0 33%;
+            flex-wrap: wrap;
+        }
+
+        .aContact h4 {
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        .aContact p {
+            line-height: 26px;
+        }
+
+        .aContact:last-of-type {
+            text-align: center;
+
+        }
+        .aContact:last-of-type h4 {
+            text-align: center;
+        }
+
+}

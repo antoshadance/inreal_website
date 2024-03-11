@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.85) ;
+    /* background-color: transparent; */
+    height: 80px;
+    min-height: 80px;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+label.logo a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 24px;
+    line-height: 80px;
+    margin-left: 5%;
+    letter-spacing: 4.8px;
+    display: inline-block;
+    width: fit-content;
+}
+
+nav ul {
+    float: right;
+    margin-right: 5%;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color:rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: .5s;
+}
+
+label.logo a:hover {
+    color: white;
+    transition: .5s;
+}
+
+a:visited {
+    color:white;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1283px) {
+    label.logo a{
+        font-size: 22px;
+        padding-left: 25px;
+        padding-top: 10px;
+        line-height: 20px;
+        display: block;
+        width: fit-content;
+        height: fit-content;
+    }
+    .checkbtn {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #3e445c;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        margin-right: 0;
+    }
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: transparent;
+        line-height: 30px;
+        margin: 15px auto;
+        height: 7.5rem;
+        width: 100%;
+        font-family: "Montseratt",sans-serif;
+        font-weight: 400;
+    }
+    nav ul li a {
+        font-size: 24px;
+        color: white;
+        background-color: transparent;
+        width: fit-content;
+        margin: auto;
+    }
+
+    nav ul li a:visited {
+        color: white
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+        position: sticky;
+    }
+    nav {
+        width: 100vw;
+    }
+ 
+}
